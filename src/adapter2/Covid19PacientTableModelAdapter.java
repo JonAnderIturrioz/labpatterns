@@ -13,23 +13,23 @@ public class Covid19PacientTableModelAdapter extends AbstractTableModel {
 	    this.pacient=p;
 	  }
 
-	  public int getColumnCount() {
-	    // Challenge!
-		 return 1;
+	  public int getColumnCount() {		  
+		  return columnNames.length;
 	  }
 
+	  @Override
 	  public String getColumnName(int i) {
-	    // Challenge!
-		  return "Column name 1";
+		  return columnNames[i];
 	  }
 
 	  public int getRowCount() {
-	    // Challenge!
+	   
 		  return 1;
 	  }
 
 	  public Object getValueAt(int row, int col) {
-	    // Challenge!
-		  return "value";
+		  
+		  
+		  return null;
 	  }
 	}
